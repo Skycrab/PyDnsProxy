@@ -31,7 +31,7 @@ def preg_match(preg,real):
         now = real.find(s)
         if now < pre:
             return False
-        prev = now +len(s)
+        pre = now +len(s)
     return True
 
 def udp_send(address,data):
